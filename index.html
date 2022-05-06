@@ -5,96 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/scss/custom.scss">
     <title>Micro Portfolio | Bootstrap </title>
 </head>
-<body>
-    <nav class="navbar  navbar-light navbar-expand-sm">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon justify-content-end"></span>
-        </button>
-        <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
-            <ul class=" navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#Hello"> Hello </a></li>
-                <li class="nav-item"><a class="nav-link" href="#Portfolio"> Portfolio </a></li>
-                <li class="nav-item"><a class="nav-link" href="#About"> About </a></li>
-                <li class="nav-item"><a class="nav-link" href="#Contact"> Contact </a></li>
-            </ul>
+<body data-bs-spy="scroll" data-bs-target="#navbar-ex" data-bs-offset="0" tabindex="0">
+    <nav id = "navbar-ex" class="navbar navbar-light navbar-expand-sm py-2 sticky-top">
+        <div class="container ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
+                <ul class=" navbar-nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="#Hello"> Hello </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Portfolio"> Portfolio </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About"> About </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact"> Contact </a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main id="Hello">
-        <div>
-            <h1>Bello Oluwatomisin</h1>
-            <p>Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
-                If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-            <button> Start Collaboration </button>
+    <main id="Hello" class="p-5">
+        <div class="container d-flex justify-content-between">
+            <div class="text-start align-self-center">
+                <h1>Bello Oluwatomisin</h1>
+                <p class="my-4">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
+                    If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
+                <button type="button" class="btn btn-primary"> Start Collaboration </button>
+            </div>  
+            <img class="img-fluid d-none d-sm-block" src="./assets/img/image-geometry_1.png" alt="main-img">
         </div>
     </main>
 
-    
-    <section>
-        <div>
-            <div>
-                <h3> Languages </h3>
-                <ul>
-                    <li> Javascript </li>
-                    <li> Ruby </li>
-                    <li> HTML </li>
-                    <li> CSSS</li>
-                </ul>
-            </div>
-            <div>
-                <h3> Frameworks </h3>
-                <ul>
-                    <li> Bootstrap </li>
-                    <li> Ruby On rails </li>
-                    <li> RSpec </li>
-                    <li> Capibara </li>
-                    <li> Selenium </li>
-                </ul>
-            </div>        
-            <div>
-                <h3> Skills </h3>
-                <ul>
-                    <li> Codekit </li>
-                    <li> Codepen </li>
-                    <li> Github </li>
-                    <li> GitLab </li>
-                    <li> Terminal </li>
-                </ul>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-        </div>
-        <div>
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-            <button> Get my CV</button>
+    <section id="Portfolio">
+        <div class="container mx-auto">
+            <img class="w-50 " src="./assets/img/Group-117.png" alt="">
         </div>
     </section>
-    <section>
-        <h2> Get Started </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <form action="">
-            <label for="name">Your name </label>
-            <input type="text" name="name" id="name">
-            <label for="email">Your email </label>
-            <input type="email" name="email" id="email">
-            <label for="message">Message</label>
-            <textarea name="massage" id="" cols="30" rows="10">
-                Enter your message ...
-            </textarea>
+    <section id="About">
+        <div class="container d-flex justify-content-between">
+            <div class="row">
+                <div class="col">
+                    <h3> Languages </h3>
+                    <ul>
+                        <li> Javascript </li>
+                        <li> Ruby </li>
+                        <li> HTML </li>
+                        <li> CSSS</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3> Frameworks </h3>
+                    <ul>
+                        <li> Bootstrap </li>
+                        <li> Ruby On rails </li>
+                        <li> RSpec </li>
+                        <li> Capibara </li>
+                        <li> Selenium </li>
+                    </ul>
+                </div>        
+                <div class="col-6">
+                    <h3> Skills </h3>
+                    <ul>
+                        <li> Codekit </li>
+                        <li> Codepen </li>
+                        <li> Github </li>
+                        <li> GitLab </li>
+                        <li> Terminal </li>
+                    </ul>
+                </div class="col-6">
+                <p>dd</p>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
 
-            <button>Start Collaboration</button>
-        </form>
+            <div class="text-start align-self-center">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
+                <button class="btn btn-primary"> Get my CV</button>
+            </div>
+        </div>
+     
+    </section>
+    <section id="Contact">
+        <div class=" container justify-content-center">
+            <h2> Get Started </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <form action="">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Your name </label>
+                    <input class="form-control" type="text" name="name" id="name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label for="email">Your email </label>
+                    <input class="form-control" type="email" name="email" id="email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" name="massage" id="" cols="30" rows="10">
+                        Enter your message ...
+                    </textarea>
+                </div>
+                <button class="btn btn-primary">Start Collaboration</button>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <span> Get my CV</span>
+    <footer class="bg-dark text-white mt-2 ">
+        <div class="container d-flex">
+        <span class=""> Get my CV</span>
 
         <ul>
-            <li><img src="" alt=""></li>
+            <li><a href="https://github.com/t-bello7" class="github"><span class="sr-only">Bello Github Profile</span></a></li>
         </ul>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
